@@ -12,10 +12,13 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div>
-      <Link to={"/notes"}>Go to Demo</Link>
-      <Outlet />
-    </div>
+    <main id="content">
+      <h1>Hey There its A Note Taking App</h1>
+      <p>Its an Amazing Remix App vit basic functionalities</p>
+      <p id="cta">
+        <Link to={"/notes"}>Try now</Link>
+      </p>
+    </main>
   );
 }
 

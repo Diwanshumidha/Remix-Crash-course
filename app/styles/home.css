@@ -1,6 +1,18 @@
 #content {
   text-align: center;
   color: var(--color-primary-10);
+  display: flex;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 #cta {

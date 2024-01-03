@@ -1,9 +1,11 @@
+import { Form } from "@remix-run/react";
 import styles from "./NewNote.css";
 import { Links } from "@/utils/types";
 
 function NewNote() {
   return (
-    <form method="post" id="note-form">
+    <Form method="post" id="note-form">
+      <input type="hidden" name="_action" value="Add_Note" />
       <p>
         <label htmlFor="title">Title</label>
         <input type="text" id="title" name="title" required />
@@ -15,7 +17,7 @@ function NewNote() {
       <div className="form-actions">
         <button>Add Note</button>
       </div>
-    </form>
+    </Form>
   );
 }
 

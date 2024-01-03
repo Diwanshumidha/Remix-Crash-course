@@ -1,3 +1,4 @@
+import { ActionFunction } from "@remix-run/node";
 import { NavLink } from "@remix-run/react";
 
 function MainNavigation() {
